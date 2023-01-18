@@ -25,16 +25,6 @@
                                     <action selector="signInClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vh2-k6-8FQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFQ-po-jFF">
-                                <rect key="frame" x="237" y="434" width="139" height="89"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
-                                <connections>
-                                    <action selector="singUpClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PHm-ge-gSG"/>
-                                    <segue destination="3cx-XK-oSX" kind="show" id="tdr-eU-F7h"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Instagram Clone Firebase" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8l-Fn-kpW">
                                 <rect key="frame" x="42" y="90" width="321" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -54,6 +44,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFQ-po-jFF">
+                                <rect key="frame" x="224" y="434" width="139" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
+                                <connections>
+                                    <action selector="signUpClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L61-JU-lpY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -63,18 +62,19 @@
                         <outlet property="emailText" destination="0bm-mK-Nu4" id="GHR-rM-JdY"/>
                         <outlet property="passwordText" destination="c0r-R4-n4U" id="AgK-bW-wIE"/>
                         <segue destination="ell-DQ-HlY" kind="presentation" identifier="toFeedVC" modalPresentationStyle="fullScreen" id="JbD-eN-BWU"/>
+                        <segue destination="3cx-XK-oSX" kind="presentation" identifier="toSignUpVC" modalPresentationStyle="fullScreen" id="oxR-1a-aPk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1008.3969465648854" y="-306.33802816901408"/>
+            <point key="canvasLocation" x="-1008" y="-320"/>
         </scene>
-        <!--Sing Up View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="0yg-rR-xhH">
             <objects>
-                <viewController id="3cx-XK-oSX" customClass="SingUpViewController" customModule="InstaCloneFirebase" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3cx-XK-oSX" customClass="SignUpViewController" customModule="InstaCloneFirebase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wzu-EP-eO1">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iF0-Pw-aFE">
@@ -127,14 +127,40 @@
                     <view key="view" contentMode="scaleToFill" id="FhP-Z7-vWk">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9n7-Da-Mz3">
+                                <rect key="frame" x="76" y="158" width="240" height="215"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Descriptions" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Icf-u8-Ugu">
+                                <rect key="frame" x="52" y="456" width="289" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyV-1E-8ft">
+                                <rect key="frame" x="143" y="565" width="106" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Upload"/>
+                                <connections>
+                                    <action selector="uploadButtonClicked:" destination="JfC-Ky-O5n" eventType="touchUpInside" id="oPz-B7-cio"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="E3p-Ep-IP3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="U" image="u.circle" catalog="system" id="bbs-Mm-UjI"/>
+                    <connections>
+                        <outlet property="descriptionsText" destination="Icf-u8-Ugu" id="S4k-Va-doQ"/>
+                        <outlet property="imageView" destination="9n7-Da-Mz3" id="bEk-5q-YgP"/>
+                        <outlet property="uploadButton" destination="kyV-1E-8ft" id="UEC-kw-kBI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zjq-yU-rVr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="715" y="81"/>
+            <point key="canvasLocation" x="713.74045801526711" y="80.985915492957744"/>
         </scene>
         <!--Settings-->
         <scene sceneID="gmG-sA-SNz">
@@ -151,7 +177,6 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
                                     <action selector="logoutClicked:" destination="7XP-sr-shp" eventType="touchUpInside" id="luS-5C-QNA"/>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="toVC" modalPresentationStyle="fullScreen" id="d16-F2-5gL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -159,6 +184,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="s.circle" catalog="system" id="Nrk-sU-5HQ"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toVC" modalPresentationStyle="fullScreen" id="mAt-zZ-QgO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oto-dq-iij" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -183,7 +211,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Cc8-eN-HWd">
             <objects>
-                <tabBarController id="ell-DQ-HlY" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" id="ell-DQ-HlY" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="jHg-1l-yVr"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IRZ-3t-YUD">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
@@ -206,6 +234,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="f.circle" catalog="system" width="128" height="123"/>
+        <image name="photo" catalog="system" width="128" height="93"/>
         <image name="s.circle" catalog="system" width="128" height="123"/>
         <image name="u.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">

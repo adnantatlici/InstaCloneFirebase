@@ -9,7 +9,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class SingUpViewController: UIViewController {
+class SignUpViewController: UIViewController {
     
     
     

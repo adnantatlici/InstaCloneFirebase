@@ -17,7 +17,7 @@
 		618669542976E07800D04601 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618669532976E07800D04601 /* FeedViewController.swift */; };
 		618669562976E08800D04601 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618669552976E08800D04601 /* UploadViewController.swift */; };
 		618669582976E09200D04601 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618669572976E09200D04601 /* SettingsViewController.swift */; };
-		6186695A2976E3A000D04601 /* SingUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618669592976E3A000D04601 /* SingUpViewController.swift */; };
+		6186695A2976E3A000D04601 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618669592976E3A000D04601 /* SignUpViewController.swift */; };
 		618669652976F62000D04601 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 618669642976F62000D04601 /* FirebaseAnalytics */; };
 		618669672976F62000D04601 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 618669662976F62000D04601 /* FirebaseAnalyticsSwift */; };
 		618669692976F62000D04601 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 618669682976F62000D04601 /* FirebaseAnalyticsWithoutAdIdSupport */; };
@@ -54,7 +54,7 @@
 		618669532976E07800D04601 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		618669552976E08800D04601 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		618669572976E09200D04601 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		618669592976E3A000D04601 /* SingUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpViewController.swift; sourceTree = "<group>"; };
+		618669592976E3A000D04601 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +101,7 @@
 				618669532976E07800D04601 /* FeedViewController.swift */,
 				618669552976E08800D04601 /* UploadViewController.swift */,
 				618669572976E09200D04601 /* SettingsViewController.swift */,
-				618669592976E3A000D04601 /* SingUpViewController.swift */,
+				618669592976E3A000D04601 /* SignUpViewController.swift */,
 				6186693A2976DA0200D04601 /* Main.storyboard */,
 				6186693D2976DA0300D04601 /* Assets.xcassets */,
 				6186693F2976DA0300D04601 /* LaunchScreen.storyboard */,
@@ -204,7 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				618669392976DA0200D04601 /* ViewController.swift in Sources */,
-				6186695A2976E3A000D04601 /* SingUpViewController.swift in Sources */,
+				6186695A2976E3A000D04601 /* SignUpViewController.swift in Sources */,
 				618669562976E08800D04601 /* UploadViewController.swift in Sources */,
 				618669352976DA0200D04601 /* AppDelegate.swift in Sources */,
 				618669542976E07800D04601 /* FeedViewController.swift in Sources */,
