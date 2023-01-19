@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		618448792979DD37002AF6FE /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618448782979DD37002AF6FE /* FeedCell.swift */; };
 		618669352976DA0200D04601 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618669342976DA0200D04601 /* AppDelegate.swift */; };
 		618669372976DA0200D04601 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618669362976DA0200D04601 /* SceneDelegate.swift */; };
 		618669392976DA0200D04601 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618669382976DA0200D04601 /* ViewController.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXBuildRule section */
 
 /* Begin PBXFileReference section */
+		618448782979DD37002AF6FE /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		618669312976DA0200D04601 /* InstaCloneFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaCloneFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		618669342976DA0200D04601 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		618669362976DA0200D04601 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				618669362976DA0200D04601 /* SceneDelegate.swift */,
 				618669382976DA0200D04601 /* ViewController.swift */,
 				618669532976E07800D04601 /* FeedViewController.swift */,
+				618448782979DD37002AF6FE /* FeedCell.swift */,
 				618669552976E08800D04601 /* UploadViewController.swift */,
 				618669572976E09200D04601 /* SettingsViewController.swift */,
 				618669592976E3A000D04601 /* SignUpViewController.swift */,
@@ -208,6 +211,7 @@
 				618669562976E08800D04601 /* UploadViewController.swift in Sources */,
 				618669352976DA0200D04601 /* AppDelegate.swift in Sources */,
 				618669542976E07800D04601 /* FeedViewController.swift in Sources */,
+				618448792979DD37002AF6FE /* FeedCell.swift in Sources */,
 				618669372976DA0200D04601 /* SceneDelegate.swift in Sources */,
 				618669582976E09200D04601 /* SettingsViewController.swift in Sources */,
 			);
