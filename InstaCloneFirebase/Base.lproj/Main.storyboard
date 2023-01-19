@@ -233,6 +233,9 @@
                                                     <rect key="frame" x="30" y="325" width="55" height="35"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" title="Like"/>
+                                                    <connections>
+                                                        <action selector="likeButtonClicked:" destination="h9g-gL-s2g" eventType="touchUpInside" id="XuW-bU-wJK"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzP-am-aue">
                                                     <rect key="frame" x="273" y="325" width="88" height="28"/>
@@ -252,6 +255,12 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKA-pa-uE7">
+                                                    <rect key="frame" x="319" y="-18" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottomMargin" secondItem="zzP-am-aue" secondAttribute="bottom" constant="-4" id="2qm-bc-Itj"/>
@@ -261,16 +270,19 @@
                                                 <constraint firstItem="yeT-J1-M3E" firstAttribute="top" secondItem="fiI-Ef-9Uv" secondAttribute="bottom" constant="8" id="LZQ-cI-CK8"/>
                                                 <constraint firstItem="yeT-J1-M3E" firstAttribute="trailing" secondItem="5uh-Vf-I5X" secondAttribute="trailing" id="MM4-b5-s61"/>
                                                 <constraint firstItem="zQZ-dy-FX0" firstAttribute="top" secondItem="5uh-Vf-I5X" secondAttribute="bottom" constant="8" id="Rir-IJ-7ld"/>
+                                                <constraint firstItem="oKA-pa-uE7" firstAttribute="trailing" secondItem="yeT-J1-M3E" secondAttribute="trailing" id="SH2-aZ-oz2"/>
                                                 <constraint firstItem="5uh-Vf-I5X" firstAttribute="trailing" secondItem="zzP-am-aue" secondAttribute="trailing" id="YqH-AZ-nfS"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="zQZ-dy-FX0" secondAttribute="bottom" constant="-11" id="fdz-hn-Pfi"/>
                                                 <constraint firstItem="yeT-J1-M3E" firstAttribute="leading" secondItem="5uh-Vf-I5X" secondAttribute="leading" id="mCX-jd-rwY"/>
                                                 <constraint firstItem="zQZ-dy-FX0" firstAttribute="leading" secondItem="Ep7-3B-zBy" secondAttribute="leadingMargin" constant="10" id="uAd-D1-KHE"/>
+                                                <constraint firstItem="fiI-Ef-9Uv" firstAttribute="top" secondItem="oKA-pa-uE7" secondAttribute="bottom" constant="8" id="udf-gB-2WX"/>
                                                 <constraint firstItem="fiI-Ef-9Uv" firstAttribute="top" secondItem="Ep7-3B-zBy" secondAttribute="topMargin" id="vMo-QC-fHP"/>
                                                 <constraint firstItem="fiI-Ef-9Uv" firstAttribute="leading" secondItem="Ep7-3B-zBy" secondAttribute="leadingMargin" id="yB0-Kh-FB9"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="commentLabel" destination="5uh-Vf-I5X" id="OPv-th-huG"/>
+                                            <outlet property="documentIdLabel" destination="oKA-pa-uE7" id="RSd-t0-ywx"/>
                                             <outlet property="likeLabel" destination="zzP-am-aue" id="heL-yt-rtD"/>
                                             <outlet property="userEmailLabel" destination="fiI-Ef-9Uv" id="IId-k6-0SO"/>
                                             <outlet property="userImageView" destination="yeT-J1-M3E" id="Wre-SV-alj"/>
